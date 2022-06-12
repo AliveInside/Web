@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Таблица объявлений</title>
+</head>
+<body>
+    <form method="POST">
+
+        <p>
+            Введите данные:
+        </p>
+        <p>
+            Email:
+            <input type="text" name="email" value="">
+        </p>
+        <p>
+            Выбор категории:
+            <select name='category'>
+                <!-- $CATEGORIES$ -->
+            </select>
+
+        </p>
+        <p>
+            Заголовок объявления:
+            <input type="text" name="title" value="">
+        </p>
+        <p>
+            Описание объявления:
+            <input type="text" name="description" value="">
+        </p>
+        <p>
+            <input type="submit" value="Добавить" name="add">
+        </p>
+    </form>
+    <table border="1">
+        <caption>Таблица объявлений</caption>
+        <tr>
+            <th>Категория</th>
+            <th>Заголовок</th>
+            <th>Описание</th>
+            <th>Почта</th>
+        </tr>'
+        <!-- $TABLE$ -->
+    </table>
+</body>
+</html>
